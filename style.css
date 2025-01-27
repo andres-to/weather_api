@@ -1,0 +1,102 @@
+body {
+    background: #b3d9ff; /* Soft pastel blue background for a calm and modern look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white for a clean and light appearance */
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for a frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border matching the frosted glass style */
+    border-radius: 20px; /* Rounded corners for a smoother, friendlier design */
+    text-align: center;
+}
+
+h2, label, p {
+    color: #2a4d69; /* Darker blue for better text contrast and readability */
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px); /* Ensures input fits nicely within its container */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #2a4d69; /* Dark blue border for input fields */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded edges to match the container style */
+    background: #e8f4ff; /* Light pastel blue background for inputs */
+    color: #2a4d69; /* Dark text for good contrast */
+}
+
+button {
+    background: #4da8da; /* Pastel blue background for buttons */
+    color: white; /* White text for contrast */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px; /* Rounded corners for a modern button design */
+}
+
+button:hover {
+    background: #2a4d69; /* Darker blue on hover for visual feedback */
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+    color: #2a4d69; /* Dark blue for temperature display */
+}
+
+#weather-info {
+    font-size: 20px;
+    color: #2a4d69; /* Consistent text color for readability */
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none; /* Initially hidden until the image is loaded */
+    border-radius: 10px; /* Rounded edges for consistency */
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto; /* Allows horizontal scrolling for hourly forecast items */
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto; /* Ensures items don’t shrink or grow */
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: #2a4d69; /* Dark blue for text consistency */
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px; /* Slight rounding for a smoother appearance */
+}
+
+#hourly-heading {
+    color: #2a4d69; /* Matches the rest of the text color scheme */
+    margin-top: 10px;
+}
